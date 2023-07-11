@@ -82,5 +82,4 @@ $ tree .
 
 ## See more information
 - [Vue3](https://ja.vuejs.org/)
-- [Pinia](https://pinia.vuejs.org/)
 - [Vite](https://vitejs.dev/)
