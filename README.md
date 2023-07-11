@@ -1,18 +1,86 @@
-# Vue 3 + TypeScript + Vite
+# my-vue-app
 
-This template should help get you started developing with Vue 3 and TypeScript in Vite. The template uses Vue 3 `<script setup>` SFCs, check out the [script setup docs](https://v3.vuejs.org/api/sfc-script-setup.html#sfc-script-setup) to learn more.
+## Require
+- Node.js 18.x
+- npm
 
-## Recommended IDE Setup
+## Setup
+Clone the repository.  
+```bash
+git clone https://github.com/acn-ryoshimojima/my-vue-app.git
+```
 
-- [VS Code](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur) + [TypeScript Vue Plugin (Volar)](https://marketplace.visualstudio.com/items?itemName=Vue.vscode-typescript-vue-plugin).
+Install dependencies.  
+```bash
+cd my-vue-app/
+npm ci
+```
 
-## Type Support For `.vue` Imports in TS
+## Development.
+### Build
+To build static files to `dist/`.
+```bash
+npm run build
+```
 
-TypeScript cannot handle type information for `.vue` imports by default, so we replace the `tsc` CLI with `vue-tsc` for type checking. In editors, we need [TypeScript Vue Plugin (Volar)](https://marketplace.visualstudio.com/items?itemName=Vue.vscode-typescript-vue-plugin) to make the TypeScript language service aware of `.vue` types.
+and launch development server.
+```bash
+npm run preview
+```
 
-If the standalone TypeScript plugin doesn't feel fast enough to you, Volar has also implemented a [Take Over Mode](https://github.com/johnsoncodehk/volar/discussions/471#discussioncomment-1361669) that is more performant. You can enable it by the following steps:
+### Or Watch (Recommend)
+```bash
+npm run dev
+```
 
-1. Disable the built-in TypeScript Extension
-   1. Run `Extensions: Show Built-in Extensions` from VSCode's command palette
-   2. Find `TypeScript and JavaScript Language Features`, right click and select `Disable (Workspace)`
-2. Reload the VSCode window by running `Developer: Reload Window` from the command palette.
+## Project structure
+```
+$ tree .
+.
+├── dist
+├── index.html
+├── package.json
+├── package-lock.json
+├── postcss.config.js
+├── public
+│   └── vite.svg
+├── README.md
+├── src
+│   ├── App.vue
+│   ├── assets
+│   │   ├── css
+│   │   │   └── index.css
+│   │   └── vue.svg
+│   ├── components
+│   │   ├── MyButton.vue
+│   │   └── TextInput.vue
+│   ├── index.ts
+│   ├── language
+│   │   ├── en-US.ts
+│   │   ├── index.ts
+│   │   └── ja.ts
+│   ├── pages
+│   │   ├── Page1.vue
+│   │   ├── Page2.vue
+│   │   └── Page3.vue
+│   ├── router.ts
+│   ├── utils
+│   └── vite-env.d.ts
+├── tailwind.config.js
+├── tsconfig.json
+├── tsconfig.node.json
+└── vite.config.ts
+```
+
+|Folder/File|Description|
+|:--|:--|
+|src/App.vue|Top-Level of UI|
+|src/router.ts|Pagenation|
+|src/components/xxx|UI parts|
+|src/pages/xxx|Pages|
+|src/languages/xxx|Multilingual support|
+
+## See more information
+- [Vue3](https://ja.vuejs.org/)
+- [Pinia](https://pinia.vuejs.org/)
+- [Vite](https://vitejs.dev/)
