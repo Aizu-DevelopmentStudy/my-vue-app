@@ -7,7 +7,7 @@
 ## Setup
 Clone the repository.  
 ```bash
-git clone https://github.com/acn-ryoshimojima/my-vue-app.git
+git clone https://github.com/Aizu-DevelopmentStudy/my-vue-app.git
 ```
 
 Install dependencies.  
